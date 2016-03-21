@@ -1,0 +1,9 @@
+asdf
+whatever
+X-DSPAM-Confidence:    0.8475
+asdfa
+X-DSPAM-Confidence:    0.9999
+sd
+X-DSPAM-Confidence:    0.231
+a
+X-DSPAM-Confidence:    1.1
