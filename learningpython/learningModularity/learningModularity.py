@@ -1,11 +1,12 @@
 # Learning how to restructure your python code to create modules, functions from a simple routine.
 # this introduces a function so that module can be imported and then the function can be executed on demand.
-# To run on REPL:
-# python3
-# >>> import learningModularity
-# >>> learningModularity.fetch_words()
-# At this point, it should print a list of words obtained from 'http://sixty-north.com/c/t.txt'.
-# However you can't still run the module from command line.
+# you can't still run the module from command line.
+# Add __name__ at the very end.
+# Sandeeps-MacBook-Pro:learningModularity sandeep$ python3 learningModularity.py
+# __main__
+# then wrap it in a 'if' statement.
+# Sandeeps-MacBook-Pro:learningModularity sandeep$ python3 learningModularity.py
+# and it prints the whole list.
 
 from urllib.request import urlopen
 
@@ -19,3 +20,7 @@ def fetch_words():
 
 	for word in story_words:
 		print (word)
+
+#print (__name__)
+if __name__ == '__main__':
+	fetch_words()
