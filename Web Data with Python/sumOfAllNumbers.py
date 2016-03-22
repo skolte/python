@@ -1,3 +1,4 @@
+# Read a text file, use regular expression to get sum of all numbers in the file.
 __author__ = 'sandeep'
 import re
 with open('regex_sum_244389.txt', 'r') as f:                        # Open and read the file.

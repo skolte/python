@@ -1,3 +1,4 @@
+# Read google maps to get place Id.
 import urllib
 import json
 
@@ -21,11 +22,5 @@ while True:
         print data
         continue
 
-    #print json.dumps(js, indent=4)
-
     place_id = js["results"][0]["place_id"]
-    #lat = js["results"][0]["geometry"]["location"]["lat"]
-    #lng = js["results"][0]["geometry"]["location"]["lng"]
-    #print 'lat',lat,'lng',lng
-    #location = js['results'][0]['formatted_address']
     print 'Place id ', place_id

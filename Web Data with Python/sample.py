@@ -1,3 +1,4 @@
+# Simple sample program in Python.
 __author__ = 'sandeep'
 
 firstline = "blah blah"

@@ -1,3 +1,4 @@
+# Use socket to connect to a URL and read a document.
 import socket
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

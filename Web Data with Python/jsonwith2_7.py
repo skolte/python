@@ -1,3 +1,6 @@
+# Read json document and calculate the sum of all counts.
+# This code uses Python 2.7.
+
 import json
 from urllib.request import urlopen
 
