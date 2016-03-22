@@ -1,6 +1,8 @@
+# A simple program to read a given file and count number of lines that start with 'From '.
+# This one doesn't use a regex.
 __author__ = 'sandeep'
 
-fname = input("Enter file name: ")
+fname = input("Enter file name (mbox-short.txt): ")
 if len(fname) < 1 : fname = "mbox-short.txt"
 
 fh = open(fname)

@@ -13,10 +13,19 @@
 # running from command line:
 # python3 learningModularity.py http://sixty-north.com/c/t.txt
 
+# Added docstrings.
+#
 import sys
 from urllib.request import urlopen
 
 def fetch_words(url):
+	"""Fetch a list of words from the url.
+
+		Args:
+		    url: The URL of a UTF-8 document.
+		Returns:
+		    A list of string containing the words.
+	"""
 	with urlopen(url) as story:
 		story_words = []
 		for line in story:
@@ -27,6 +36,7 @@ def fetch_words(url):
 
 
 def print_items(items):
+	"""Print given list of items."""
 	for item in items:
 		print (item)
 

@@ -1,5 +1,17 @@
-# Use the file name mbox-short.txt as the file name
-fname = input("Enter file name: ")
+# Simple program to calculate the spam score from given text file that contains all headers.
+# Use the file name testinput.txt as the file name.
+# Sample file:
+# asdf
+# whatever
+# X-DSPAM-Confidence:    0.8475
+# asdfa
+# X-DSPAM-Confidence:    0.9999
+# sd
+# X-DSPAM-Confidence:    0.231
+# a
+# X-DSPAM-Confidence:    1.1
+
+fname = input("Enter file name (testinput.txt): ")
 fh = open(fname)
 total = 0.0
 counter = 0
@@ -9,15 +21,11 @@ for line in fh:
 
     startIndex = len(str2)
     endIndex = len(line)
-    #print('Start:'+str(startIndex) + ' end: ' + str(endIndex))
+
     strNumber = line[startIndex:endIndex].rstrip()
-    #print("str:" + strNumber)
-    #abc = input("whatever:")
     myFloat = float(strNumber)
-    #print(str(myFloat))
     total = total + myFloat
     counter = counter + 1
-    #print(str(total))
-    #print(str(counter))
+
 average = total / counter
 print ("Average spam confidence: " + str(average))

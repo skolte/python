@@ -10,7 +10,7 @@ if (6, 0, 0) > x :
 if (5, 0, 300) > x :
     print ('yes4')
 
-name = raw_input("Enter file:")
+name = raw_input("Enter file (mbox-short.txt):")
 if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name)
 

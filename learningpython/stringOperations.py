@@ -1,3 +1,4 @@
+# Some simple string manipulations.
 __author__ = 'sandeep'
 text = "X-DSPAM-Confidence:    0.8475";
 numPosition = text.find("0.8475");

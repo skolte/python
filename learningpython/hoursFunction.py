@@ -1,3 +1,8 @@
+# Accept inputs on command line and perform a simple multiplication,
+# if number of hours are greater than 40, then pay 1.5 times the rate for the additional hours,
+# print the result to the screen.
+# Refactored the operation into a separate method.
+# Uses Python 2.7.
 def computepay(h,r):
     if h > 40:
     	pay = 40 * r + (h - 40) * r * 1.5

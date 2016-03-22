@@ -1,5 +1,4 @@
-# This first line is provided for you
-
+# Simple program to play with if-else.
 score = float(raw_input("Enter Score:"))
 if score >= 0.0 and score <= 1.0:
     if score >= 0.9:

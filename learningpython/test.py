@@ -1,3 +1,5 @@
+# Playing with conversion to int.
+
 #astr = 'Hello Bob'
 #istr = int(astr)
 #print 'First', istr
